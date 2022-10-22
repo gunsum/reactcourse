@@ -17,6 +17,7 @@ export default class CategoryList extends Component {
         {
           this.state.categories.map(category => (
             <ListGroupItem key={category.categoryId}>
+              
               {category.categoryName}</ListGroupItem>
           ))}
          </ListGroup>

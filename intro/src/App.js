@@ -7,6 +7,7 @@ import {Container,Row,Col} from `reactstrap`;
 function App() {
   let productInfo = {title: "ProductList"}
   let categoryInfo = {title:"Categorylist"}
+  let totalInfo = {title: "Total List"}
   return (
     <div>
       <Container>
@@ -17,9 +18,12 @@ function App() {
           <Col xs="3">
            <CategoryList info={categoryInfo} />
           </Col>
-          <Col xs="9">
+          <Col xs="6">
            <ProductList info={productInfo}/>
-          </Col>  
+           </Col>  
+           <Col xs="3">
+            <TotalList infor={categoryInfo}/>
+           </Col>
         </Row>
         </Container>
         
